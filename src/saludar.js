@@ -1,6 +1,6 @@
 function saludar(nombre, edad, genero, idioma, horaActual) {
-  // 1. Saludo según la hora (mañana, tarde, noche)
-  let saludoHora = "Hola";
+
+  let saludoHora = "Hola ";
   if (horaActual >= 6 && horaActual < 12) {
     saludoHora = idioma === "en" ? "Good morning" : "Buenos días";
   } else if (horaActual >= 12 && horaActual < 19) {
@@ -8,15 +8,27 @@ function saludar(nombre, edad, genero, idioma, horaActual) {
   } else {
     saludoHora = idioma === "en" ? "Good evening" : "Buenas noches";
   }
+  
+  if (edad > 100 || edad < 0) {
+  return "error edad invalida";
+  }
+  if (!isNaN(nombre)) {
+  return "error nombre invalido";
+  }
 
-  // 2. Título por edad (> 30 usa Sr. o Sra.)
+  if(!nombre){
+    nombre = "visitante";
+  }
+ 
+
   let titulo = "";
   if (edad > 30) {
     if (genero === "masculino") titulo = "Sr. ";
     else if (genero === "femenino") titulo = "Sra. ";
   }
 
-  // 3. Armar el mensaje final combinado
+
+
   return `${saludoHora}, ${titulo}${nombre}!`;
 }
 
