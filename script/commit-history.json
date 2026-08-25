@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Troncaso",
+    "commit": {
+      "date": "2026-08-25T02:42:45.000Z",
+      "message": "cambios",
+      "url": "https://github.com/Gabriel-Troncoso/Tarea2-ingSoftw-TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 97,
+      "additions": 79,
+      "deletions": 18,
+      "date": "2026-08-25"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
